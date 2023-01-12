@@ -26,8 +26,9 @@ void ofApp::update()
         if (m.getAddress() == "/kls/io/crank")
         {
             auto value = m.getArgAsFloat(0);
-            _midiOut.sendControlChange(1, 3, (int)(value));
-            _virtualMidiOut.sendControlChange(1, 3, (int)(value));
+            ofLogNotice() << "/kls/io/crank " << value;
+            _midiOut.sendControlChange(1, 2, (int)(value));
+            _virtualMidiOut.sendControlChange(1, 2, (int)(value));
         }
     }
 }
