@@ -1,0 +1,4 @@
+local_addons/ofxCommandLineUtils
+local_addons/ofxMidi
+local_addons/ofxApp
+ofxOsc
