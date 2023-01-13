@@ -15,7 +15,7 @@ void ofApp::setup()
         listPorts();
         ofExit();
     }
-    _virtualMidiOut.openVirtualPort("ofOSC2MIDI");
+    _virtualMidiOut.openVirtualPort("pontifex");
 }
 void ofApp::update()
 {

@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-    cxxopts::Options options("ofOSC2MIDI", "OSC to MIDI bridge");
+    cxxopts::Options options("pontifex", "OSC to MIDI bridge for silent sex ouvertuere in e moll performance");
     options.add_options()("d,debug", "Enable debugging")("l,list", "list", cxxopts::value<bool>()->default_value("false"))("m,midiport", "midiport", cxxopts::value<int>()->default_value("0"));
     auto result = options.parse(argc, argv);
 
